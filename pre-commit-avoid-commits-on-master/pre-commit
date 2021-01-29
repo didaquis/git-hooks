@@ -5,7 +5,7 @@ branch="$(git rev-parse --abbrev-ref HEAD)"
 if [ "$branch" = "master" ]; then
   echo "----------------------------"
   echo "\033[31mMessage from a 'pre-commit' hook:\033[0m"
-  echo "\033[31mYou can't commit directly to master branch!!\033[0m"
+  echo "\033[31mYou can't commit directly to this branch!!\033[0m"
   echo "----------------------------"
   exit 1
 fi
